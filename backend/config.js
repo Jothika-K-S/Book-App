@@ -1,3 +1,0 @@
-export const PORT = process.env.PORT;
-
-export const MONGO_URL = 'mongodb+srv://jothikakanthuluvaseenivasan:OFffSxzNgLOyHw2R@practice.ih5tixr.mongodb.net/books-collection?retryWrites=true&w=majority&appName=practice'
