@@ -23,9 +23,9 @@ app.use(
 
 app.use('/api/books',bookRoute)
 
-mongoose.connect(MONGO_URL).then(() => {
+mongoose.connect(process.env.MONGO_URL).then(() => {
     console.log('Database Connected Successfully!')
-    app.listen(3500, () =>  {
+    app.listen(process.env.PORT || 3500, () =>  {
     console.log(`Server is running on port 3500`)
 })
 }).catch((err) => console.log(err))
