@@ -11,15 +11,15 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(cors())
 
-app.use(
-    cors(
-        {
-            origin: 'http://localhost:1234/',
-            methods: ['GET', 'POST', 'PUT', 'DELETE'],
-            allowedHeaders: ['Content-Type', 'Authorization'],
-        }
-    )
-)
+// app.use(
+//     cors(
+//         {
+//             origin: 'http://localhost:1234/',
+//             methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//             allowedHeaders: ['Content-Type', 'Authorization'],
+//         }
+//     )
+// )
 
 app.use('/api/books',bookRoute)
 
